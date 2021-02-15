@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lib2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/bundles/Arp SpoofDetector/app/lib/mail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/bundles/Arp SpoofDetector/app/lib/activation.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

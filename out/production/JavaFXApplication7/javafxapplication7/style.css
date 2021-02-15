@@ -1,0 +1,68 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14-Apr-2020, 19:09:24
+    Author     : el_le
+*/
+.root {
+    -fx-background-color: #009999
+}
+
+#paneTop {
+    -fx-background-color: #20bac5;
+}
+
+#scrollpane {
+    -fx-background-color: #bef399
+}
+
+#localPane{
+    -fx-background-color: #ffffcc
+}
+
+.botones{
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: #20bac5;
+
+}
+
+#iv_local{
+    -fx-image: url("/javafxapplication7/images/iv_local.png");
+}
+
+
+#bt_exit{
+    -fx-background-image: url("/javafxapplication7/images/bt_exit.png");
+}
+
+
+#bt_shield[value="on"] {
+    -fx-background-image: url("/javafxapplication7/images/bt_shield.png");
+}
+
+#bt_shield[value="off"] {
+    -fx-background-image: url("/javafxapplication7/images/bt_protectionOFF.png");
+}
+
+#bt_shield{
+    -fx-background-image: url("/javafxapplication7/images/bt_shield.png");
+}
+
+#bt_arp{
+    -fx-background-image: url("/javafxapplication7/images/iconoLight.png");
+}
+
+#bt_settings{
+    -fx-background-image: url("/javafxapplication7/images/bt_settings.png");
+}
+
+#bt_refresh{
+    -fx-background-image: url("/javafxapplication7/images/bt_refresh.png");
+}
+
+
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="337.0" prefWidth="428.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication7.FXMLLogController">
+   <children>
+      <ImageView id="iv_about" fx:id="iv_about" fitHeight="323.0" fitWidth="396.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/splash.png" />
+         </image>
+      </ImageView>
+      <Button id="bt_closeABout" fx:id="bt_closeABout" layoutX="31.0" layoutY="285.0" mnemonicParsing="false" onMouseClicked="#bt_onCLoseAbout" text="OK!" />
+   </children>
+</AnchorPane>
