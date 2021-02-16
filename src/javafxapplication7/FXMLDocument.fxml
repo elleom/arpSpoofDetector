@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorRootMain" maxHeight="495.0" maxWidth="689.0" minHeight="488.0" minWidth="681.0" prefHeight="495.0" prefWidth="689.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication7.FXMLDocumentController">
+   <children>
+      <Circle id="circleBlue" fx:id="circleBlue" fill="#5c9fdd" layoutX="58.0" layoutY="209.0" radius="35.0" stroke="TRANSPARENT" strokeType="INSIDE" styleClass="balls" />
+      <Pane id="paneTop" layoutX="71.0" layoutY="25.0" prefHeight="101.0" prefWidth="607.0" AnchorPane.bottomAnchor="369.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+         <children>
+            <Button id="bt_arp" fx:id="bt_arp" layoutX="17.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickLog" onMouseEntered="#onMouseEnterButton" onMouseExited="#onMouseExitButton" prefHeight="76.0" prefWidth="110.0" styleClass="botones">
+               <tooltip>
+                  <Tooltip text="About" />
+               </tooltip></Button>
+            <Button id="bt_shield" fx:id="bt_shield" layoutX="257.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickShield" onMouseEntered="#onMouseEnterButton" onMouseExited="#onMouseExitButton" prefHeight="76.0" prefWidth="110.0" styleClass="botones">
+               <tooltip>
+                  <Tooltip text="Toggle On / OFF" />
+               </tooltip></Button>
+            <Button id="bt_settings" fx:id="bt_settings" layoutX="375.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onCLickSettings" onMouseEntered="#onMouseEnterButton" onMouseExited="#onMouseExitButton" prefHeight="76.0" prefWidth="110.0" styleClass="botones">
+               <tooltip>
+                  <Tooltip text="Settings" />
+               </tooltip></Button>
+            <Button id="bt_exit" fx:id="bt_exit" layoutX="492.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onMouseClickExit" onMouseEntered="#onMouseEnterButton" onMouseExited="#onMouseExitButton" prefHeight="76.0" prefWidth="110.0" styleClass="botones">
+               <tooltip>
+                  <Tooltip text="Hide" />
+               </tooltip></Button>
+            <Button id="bt_refresh" fx:id="bt_refresh" layoutX="138.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#onClickRefresh" onMouseEntered="#onMouseEnterButton" onMouseExited="#onMouseExitButton" prefHeight="76.0" prefWidth="110.0" styleClass="botones">
+               <tooltip>
+                  <Tooltip text="Refresh" />
+               </tooltip></Button>
+         </children>
+      </Pane>
+      <MenuBar layoutY="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="menuItemSettings" mnemonicParsing="false" onAction="#menuItemSettings" text="Settings" />
+                  <MenuItem fx:id="menuItemRefresh" mnemonicParsing="false" onAction="#menuItemRefresh" text="Refresh" />
+              <MenuItem fx:id="menuItemClose" mnemonicParsing="false" onAction="#menuItemClose" text="Close" />
+                  <MenuItem fx:id="menuItemHide" mnemonicParsing="false" onAction="#onMenuItemHide" text="Hide" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="menuItemAbout" mnemonicParsing="false" onAction="#onMenuItemAbout" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Circle fill="#e9ecff" layoutX="11.0" layoutY="345.0" radius="47.0" stroke="TRANSPARENT" strokeType="INSIDE" styleClass="balls" />
+      <Pane id="localPane" fx:id="localPane" layoutX="82.0" layoutY="125.0" maxHeight="94.0" maxWidth="618.0" minHeight="85.0" minWidth="593.0" onMouseEntered="#onMouseEnterPane" onMouseExited="#onMouseExitPane" prefHeight="94.0" prefWidth="607.0" AnchorPane.bottomAnchor="277.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="124.0">
+         <children>
+            <ImageView id="iv_local" fx:id="iv_local" fitHeight="70.0" fitWidth="94.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="125.0" layoutY="22.0" prefHeight="17.0" prefWidth="51.0" text="IP:" />
+            <Label layoutX="123.0" layoutY="44.0" prefHeight="17.0" prefWidth="51.0" text="MAC:" />
+            <Label id="lb_LocalIfaceIP" fx:id="lb_LocalIfaceIP" layoutX="160.0" layoutY="23.0" prefHeight="17.0" prefWidth="142.0" text="000.000.000.000" />
+            <Label id="lb_LocalifaceMAC" fx:id="lb_LocalIfaceMAC" layoutX="162.0" layoutY="44.0" prefHeight="17.0" prefWidth="103.0" text="00:00:00:00:00" />
+            <Label id="lb_localIfaceVendor" fx:id="lb_LocalIfaceVendor" layoutX="276.0" layoutY="44.0" prefHeight="17.0" prefWidth="142.0" text="Unknown" />
+            <Label layoutX="274.0" layoutY="22.0" text="OS: " />
+            <Label id="lb_localOS" fx:id="lb_localOS" layoutX="298.0" layoutY="22.0" text="Unknown" />
+            <ImageView id="iv_OS" fx:id="iv_OS" fitHeight="70.0" fitWidth="110.0" layoutX="485.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <ScrollPane layoutX="82.0" layoutY="217.0" prefHeight="290.0" prefWidth="607.0" AnchorPane.rightAnchor="0.0">
+         <content>
+            <Accordion id="accordionPane" fx:id="accordionPane" maxHeight="60.0" prefHeight="292.0" prefWidth="600.0">
+               <tooltip>
+                  <Tooltip text="Connected Devices" />
+               </tooltip></Accordion>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
