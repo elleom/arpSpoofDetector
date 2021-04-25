@@ -43,7 +43,7 @@
 
 ##### Process Documentation (Spanish Only)
 
-https://github.com/elleom/arpSpoofDetector/assets/MemoriaProyectoFinalDAM.pdf
+https://github.com/elleom/arpSpoofDetector/blob/main/DAM_M13_Memoria_ProyectoFinCiclo_LeonardoMartins_ARP_SpoofDetector.pdf
 
 ##### Main
 ![screen 1](https://github.com/elleom/arpSpoofDetector/blob/main/screenshot1.png "ScreenShot 1")
