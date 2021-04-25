@@ -1,6 +1,6 @@
 # arpSpoofDetector
 ## Proyecto final Desarrollo de Aplicaciones Muliplataforma (D.A.M.) / Final Project Soft-development AP
-<img src="https://github.com/elleom/arpSpoofDetector/ARP.png" width="150" height="150" alt="ARP Spoof Detector logo"/>
+<img src="https://github.com/elleom/arpSpoofDetector/ARP.jpg" width="150" height="150" alt="ARP Spoof Detector logo"/>
 
 
 ### **Standalone JavaFX Application**
