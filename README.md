@@ -46,4 +46,4 @@
 https://github.com/elleom/arpSpoofDetector/assets/MemoriaProyectoFinalDAM.pdf
 
 ##### Main
-![screen 1](https://github.com/elleom/arpSpoofDetector/screenshot1.jpg "ScreenShot 1")
+![screen 1](https://github.com/elleom/arpSpoofDetector/blob/main/screenshot1.png "ScreenShot 1")
