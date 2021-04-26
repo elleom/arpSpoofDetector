@@ -38,7 +38,9 @@
     vendor="${application.vendor}"/>
     </fx:deploy>
     </target>'
- * buld on IDE 
+ * buld on IDE
+ * Result: creates installers under /dist
+    * .exe, .msi, .deb   
 
 
 ##### Process Documentation (Spanish Only)
